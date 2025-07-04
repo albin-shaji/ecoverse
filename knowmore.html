@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Server Documentation - EcoVerse</title>
+  <meta name="description" content="Internal documentation regarding server setup, maintenance, and common procedures for EcoVerse, Albin's Home Server.">
+  <meta name="keywords" content="server documentation, setup, maintenance, procedures, EcoVerse, personal server">
+  <link href="/home/logos/ecoverse_logo_512x512.png" rel="icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="/home/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/home/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/home/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/home/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/home/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/home/assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="/index" class="logo d-flex align-items-center me-auto">
+        <img src="/home/logos/ecoverse_logo_512x512.png" alt="EcoVerse Logo"
+          class="w-8 h-8 mr-2 rounded-full object-cover">
+        <h1 class="sitename">EcoVerse</h1>
+      </a>
+        <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="/index" class="active">Home<br></a></li>
+              <li><a href="/index#about">About</a></li>
+              <li><a href="/index#applications">Projects & Applications</a></li>
+              <li><a href="/portfolio">Portfolio</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title accent-background">
+      <div class="container">
+        <h1>Server Documentation</h1>
+      </div>
+    </div>
+    <section id="starter-section" class="starter-section section">
+
+      <div class="container" data-aos="fade-up">
+
+        <p>This page provides <b>internal documentation</b> regarding the setup, maintenance, and common procedures for your server. 
+            Please fill in the bracketed placeholders with your server's specific information.</p>
+
+        <hr>
+
+        <h2>1. Overview</h2>
+        <ul style="text-align: justify;">
+          <li><strong>Server Name/Hostname: </strong>EcoVerse</li>
+          <li><strong>Purpose:</strong> This is a self-hosted server which brings web projects to life.</li>
+          <li><strong>Operating System:</strong> Microsoft<sup>&#169</sup> Windows 11 Pro 24H2</li>
+          <li><strong>IP Address (Internal):</strong> 192.168.1.100</li>
+          <li><strong>IP Address (External):</strong> 103.160.195.252</li>
+          <li><strong>Location:</strong> MC7-F99-JK76</li>
+          <li><strong>Owner/Administrator(s):</strong> Albin Shaji</li>
+          <li><strong>Last Updated:</strong> 2025-06-24</li>
+        </ul>
+        
+        <hr>
+
+        <h2>2. Hardware Specifications</h2>
+        <ul>
+          <li><strong>Make/Model:</strong> HP 15s DU3519TX</li>
+          <li><strong>CPU:</strong> Intel Core i5-1135G7</li>
+          <li><strong>RAM:</strong> 16 GB DDR4 SODIMM</li>
+          <li><strong>Storage:</strong> 512 GB NVMe SSD</li>
+          <li><strong>Network Interfaces:</strong> eth0 - Production & Management</li>
+        </ul>
+
+        <hr>
+
+        <h2>3. Network Configuration</h2>
+        <ul>
+          <li><strong>Hostname:</strong> 103.160.195.252:15195</li>
+          <li><strong>Domain:</strong> TBD</li>
+          <li><strong>DNS Servers:</strong> TBD</li>
+          <li><strong>Gateway:</strong> TBD</li>
+          <li><strong>Firewall Rules:</strong> Hidden due to Security measures</li>
+        </ul>
+
+        <hr>
+
+        <h2>4. Software & Services</h2>
+        <ul>
+          <li><strong>Operating System Version:</strong> Microsoft<sup>&#169</sup> Windows 11 Pro 24H2</li>
+          <li><strong>Key Installed Software:</strong>
+            <ul>
+              <li>XAMPP - Web hosting and Database</li>
+              <li>NGINX - Reverse proxy</li>
+            </ul>
+          </li>
+          <li><strong>Port Usage:</strong>
+            <ul>
+              <li>Port 15195 - For all kinds of traffic redirections in deployment.</li>
+              <li>Port 15196 - For all kinds of traffic redirections in development & testing.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <hr>
+
+        <h2>5. Security & Access</h2>
+        <ul>
+          <li><strong>Authentication Method:</strong> TBD</li>
+          <li><strong>Root/Administrator Password Policy:</strong> Not declared by Admin due to secure reasons.</li>
+          <li><strong>User Accounts:</strong>
+            <ul>
+                <li>TBD</li>
+              <!-- <li>[Username] - [Permissions/Roles] - [Purpose] (e.g., admin - sudo access - general administration)</li>
+              <li>[Username] - [Permissions/Roles] - [Purpose] (e.g., appuser - limited access to /var/www - application execution)</li> -->
+            </ul>
+          </li>
+          <li><strong>Backup & Recovery:</strong>
+            <ul>
+              <li><strong>Backup Strategy:</strong> Daily full backups to network share, weekly incremental.</li>
+              <li><strong>Backup Location:</strong> Personal NAS Server.</li>
+            </ul>
+          </li>
+          <li><strong>Monitoring:</strong>
+            <ul>
+              <li><strong>Monitoring System:</strong> Prometheus, Nagios, Zabbix, Datadog, CloudWatch, Wireshark.</li>
+              <li><strong>Key Metrics Monitored:</strong>CPU, RAM, Disk I/O, Network Traffic, Service Status, Ports.</li>
+            </ul>
+          </li>
+          <li><strong>Antivirus/Anti-Malware:</strong> Windows Defender, Kaspersky Total Security.</li>
+        </ul>
+
+        <hr>
+
+        <h2>6. Maintenance & Procedures</h2>
+
+        <h3>6.1. Scheduled Maintenance</h3>
+        <ul>
+          <li><strong>Patch Management:</strong> Frequency, process, - Monthly OS patches applied, reboot window]</li>
+          <li><strong>Log Rotation:</strong> Configuration, frequency - Logrotate configured for daily rotation, retain 7 days</li>
+          <li><strong>Disk Cleanup:</strong> Frequency, procedure, - Quarterly, Review of old logs and temporary files</li>
+          <li><strong>Hardware Checks:</strong> Daily check of RAID health, System status, etc..</li>
+        </ul>
+
+        <h3>6.2. Common Procedures</h3>
+        <ul>
+        <li><strong>How to Restart a Service:</strong>
+            <ul>
+            <li><strong>Via Services Management Console (GUI):</strong>
+                <ol>
+                <li>Press <code>Win + R</code>, type <code>services.msc</code>, and press Enter.</li>
+                <li>Locate the desired service (e.g., <code>Apache2.4</code>, <code>MySQL</code>).</li>
+                <li>Right-click the service and select <code>Restart</code>.</li>
+                </ol>
+            </li>
+            <li><strong>Via Command Prompt (CMD) / PowerShell (Run as Administrator):</strong>
+                <pre><code class="language-cmd">net stop "[Service Name]"
+        net start "[Service Name]"</code></pre>
+                <p><em>Example for Apache:</em> <code>net stop "Apache2.4"</code> then <code>net start "Apache2.4"</code></p>
+                <p><em>Example for MySQL:</em> <code>net stop "MySQL"</code> then <code>net start "MySQL"</code></p>
+            </li>
+            </ul>
+        </li>
+        <li><strong>How to Check Disk Space:</strong>
+            <pre><code class="language-cmd">wmic logicaldisk get caption,size,freespace</code></pre>
+            <p><em>Alternatively, use File Explorer:</em> Open "This PC" to see drive usage.</p>
+        </li>
+        <li><strong>How to Check Running Processes:</strong>
+            <ul>
+            <li><strong>Task Manager (GUI):</strong> Press <code>Ctrl + Shift + Esc</code>. Go to the "Processes" or "Details" tab.</li>
+            <li><strong>Command Prompt (CMD) / PowerShell:</strong>
+                <pre><code class="language-cmd">tasklist</code></pre>
+                <p><em>To find specific processes or sort (PowerShell for top 10 by CPU):</em>
+                <pre><code class="language-powershell">Get-Process | Sort-Object -Property CPU -Descending | Select-Object -First 10</code></pre></p>
+            </li>
+            </ul>
+        </li>
+        <li><strong>How to Check Log Files:</strong>
+            <ul>
+            <li><strong>Main System Logs (Event Viewer):</strong>
+                <ol>
+                <li>Press <code>Win + R</code>, type <code>eventvwr.msc</code>, and press Enter.</li>
+                <li>Navigate to <code>Windows Logs</code> (e.g., Application, System) or <code>Applications and Services Logs</code> for specific service events.</li>
+                </ol>
+            </li>
+            <li><strong>XAMPP/Application Logs:</strong>
+                <ul>
+                <li>Apache Error Log: <code>C:\xampp\apache\logs\error.log</code></li>
+                <li>Apache Access Log: <code>C:\xampp\apache\logs\access.log</code></li>
+                <li>MySQL Error Log: <code>C:\xampp\mysql\data\[YourComputerName].err</code></li>
+                <li>PHP Error Log: Check <code>php.ini</code> for <code>error_log</code> path, often in <code>C:\xampp\php\logs\</code> or directly in <code>C:\xampp\apache\logs\</code>.</li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        <li><strong>How to Perform a Graceful Reboot:</strong>
+            <pre><code class="language-cmd">shutdown /r /t 0</code></pre>
+            <p><em>This command initiates an immediate restart. For a scheduled restart, change <code>0</code> to a number of seconds (e.g., <code>shutdown /r /t 30</code> for 30 seconds).</em></p>
+        </li>
+        <li><strong>Adding/Removing User Accounts:</strong>
+            <ul>
+            <li><strong>Via Control Panel:</strong> <code>Control Panel</code> &gt; <code>User Accounts</code> &gt; <code>Manage another account</code>.</li>
+            <li><strong>Via Computer Management:</strong> <code>Win + X</code> &gt; <code>Computer Management</code> &gt; <code>Local Users and Groups</code>.</li>
+            <li><strong>Via Command Prompt (CMD) / PowerShell (Run as Administrator):</strong>
+                <pre><code class="language-cmd">net user [username] [password] /add</code></pre>
+                <pre><code class="language-cmd">net localgroup Administrators [username] /add</code></pre>
+            </li>
+            </ul>
+        </li>
+        <li><strong>Troubleshooting Common Issues:</strong>
+            <ul>
+            <li><strong>High CPU Usage:</strong>
+                <ul>
+                <li>Open <strong>Task Manager</strong> (<code>Ctrl + Shift + Esc</code>). Go to the "Processes" or "Details" tab and sort by CPU to identify culprits.</li>
+                <li>Check <strong>application-specific logs</strong> for processes consuming high CPU.</li>
+                </ul>
+            </li>
+            <li><strong>Disk Space Full:</strong>
+                <ul>
+                <li>Use <strong>File Explorer</strong> to visually identify large folders/files.</li>
+                <li>Use <code>wmic logicaldisk get caption,size,freespace</code> in CMD.</li>
+                <li>Review <strong>application logs</strong> (especially Apache/MySQL) for excessive log file growth.</li>
+                <li>Consider a disk cleanup tool like Windows' built-in Disk Cleanup or third-party tools like WinDirStat.</li>
+                </ul>
+            </li>
+            <li><strong>Service Not Starting:</strong>
+                <ul>
+                <li>Check <strong>Services Management Console (<code>services.msc</code>)</strong> for the service status and startup type. Try to start it manually.</li>
+                <li>Review the <strong>Event Viewer (<code>eventvwr.msc</code>)</strong>, particularly <code>Windows Logs</code> &gt; <code>Application</code> and <code>System</code>, for error messages related to the service.</li>
+                <li>Check <strong>service-specific logs</strong> (e.g., Apache <code>error.log</code>, MySQL <code>.err</code> file) for detailed startup failures.</li>
+                </ul>
+            </li>
+            <li><strong>Network Connectivity Issues:</strong>
+                <ul>
+                <li><strong><code>ping &lt;IP_Address_or_Hostname&gt;</code>:</strong> Test basic connectivity to other devices or the internet (e.g., <code>ping google.com</code> or <code>ping 8.8.8.8</code>).</li>
+                <li><strong><code>tracert &lt;IP_Address_or_Hostname&gt;</code>:</strong> Trace the route to a destination to identify where a connection breaks down.</li>
+                <li><strong><code>netstat -ano</code>:</strong> Show active connections and listening ports to confirm your services are listening on the expected ports. Check the PID to identify the process.</li>
+                <li><strong>Check Windows Defender Firewall:</strong> Ensure inbound rules are configured to allow traffic to your server's ports (e.g., 80, 443). Also, check if any third-party firewalls are interfering.</li>
+                <li><strong>Check Network Adapter Settings:</strong> Verify IP address, subnet mask, gateway, and DNS settings.</li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        </ul>
+
+        <hr>
+
+        <h2>7. Dependencies & Integrations</h2>
+        <ul>
+        <li><strong>Dependent Systems:</strong>
+            <ul>
+            <li><strong>Local Development Workflows:</strong> Visual Studio Code, WebStorm and any other IDEs.</li>
+            <li><strong>Browser-based Access:</strong> Brave, Google Chrome, Mozilla Firefox, Microsoft Edge.</li>
+            </ul>
+        </li>
+        <li><strong>Systems This Server Depends On:</strong>
+            <ul>
+            <li><strong>Hardware & Windows OS:</strong> The physical laptop and its Windows operating system (Windows 11), providing the core computing resources.</li>
+            <li><strong>Network & Internet Connection:</strong> Essential for fetching external resources, updates, and for external access to live projects.</li>
+            <li><strong>XAMPP Suite:</strong> The core XAMPP installation, including Apache, MySQL, and PHP, which are fundamental for running the web applications.</li>
+            <li><strong>Router/Modem:</strong> For network connectivity and enabling port forwarding for external access to hosted projects.</li>
+            </ul>
+        </li>
+        <li><strong>API Integrations:</strong>
+            <ul>
+            <li><strong>Consumed APIs:</strong>
+                <ul>
+                <li>Google Maps API (for projects requiring mapping functionalities).</li>
+                <li>OpenWeatherMap API (for applications displaying weather data).</li>
+                <li>Social Media APIs (for authentication or content sharing).</li>
+                </ul>
+            </li>
+            <li><strong>Provided APIs:</strong>
+                <ul>
+                <li>Custom REST APIs for single-page applications (SPAs) or mobile app backends.</li>
+                <li>Internal JSON APIs for communication between different microservices or tools hosted on the server.</li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        </ul>
+
+        <hr>
+
+        <h2>8. Change Log</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Change Description</th>
+              <th>Performed By</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>08-Jun-2025</td>
+              <td>Initial documentation creation</td>
+              <td>Albin Shaji</td>
+            </tr>
+            <tr>
+              <td>12-Jun-2025</td>
+              <td>Created Structure and Templates</td>
+              <td>Albin Shaji</td>
+            </tr>
+            <tr>
+              <td>19-Jun-2025</td>
+              <td>Developed Stage 1 PHP codes and integrated all</td>
+              <td>Albin Shaji</td>
+            </tr>
+            <tr>
+              <td>20-Jun-2025</td>
+              <td>Created Privacy Policy</td>
+              <td>Albin Shaji</td>
+            </tr>
+            <tr>
+              <td>24-Jun-2025</td>
+              <td>Completed Overall server setup by 85% and policy was updated</td>
+              <td>Albin Shaji</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr>
+
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="/index" class="logo d-flex align-items-center">
+            <img src="/home/logos/ecoverse_logo_512x512.png" alt="EcoVerse Logo"
+              class="w-8 h-8 mr-2 rounded-full object-cover">
+            <span class="sitename">EcoVerse</span>
+          </a>
+          <p style="text-align: justify;"><b>EcoVerse</b> is a centralized and self-hosted digital platform that brings
+            together a variety of web applications, tools, and services in one unified ecosystem.
+            Designed to support web development, data processing, and software deployment workflows, EcoVerse serves as
+            a personal cloud environment with the flexibility
+            to scale and adapt to multiple use cases.<br>
+            This platform is created and maintained by <b>Albin Shaji</b>, a passionate Web Developer and Software
+            Engineer with a strong background in full-stack development, data analytics, and system integration.
+            EcoVerse reflects his commitment to building secure, efficient, and accessible digital solutions — all
+            hosted locally for optimal control and performance.
+          </p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://wa.me/919526449307?text=Hello%2C%20I%20have%20an%20inquiry%20regarding%20EcoVerse."
+              target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://instagram.com/albinshaji.03" target="_blank" class="bi bi-instagram"></a>
+            <a href="https://linkedin.com/in/albin-shaji-530192340" target="_blank" class="bi bi-linkedin"></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/index">Server Home</a></li>
+            <li><a href="/index#about">About EcoVerse</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="javascript:void(0);" style="cursor: pointer;">Web App Development</a></li>
+            <li><a href="javascript:void(0);" style="cursor: pointer;">Software Deployment</a></li>
+            <li><a href="javascript:void(0);" style="cursor: pointer;">Data Analytics & Visualization</a></li>
+            <li><a href="javascript:void(0);" style="cursor: pointer;">Hosting & Cloud Solutions</a></li>
+            <li><a href="javascript:void(0);" style="cursor: pointer;">System Integration</a></li>
+            <li><a href="javascript:void(0);" style="cursor: pointer;">Troubleshooting</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12 footer-contact text-md-start">
+          <h4>Contact</h4>
+          <p>Albin Shaji</p>
+          <p>Kollamparambil House</p>
+          <p>Karimba Post, 678597</p>
+          <p>Palakkad, Kerala, India</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 95264 49307</span></p>
+          <p><strong>Email:</strong> <span>albinshajiofficial@gmail.com</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p><span id="copyright-year"></span> <strong class="px-1 sitename">EcoVerse</strong> <span> | All Rights
+            Reserved</span></p>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <div id="preloader"></div>
+
+  <script src="/home/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/home/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/home/assets/vendor/aos/aos.js"></script>
+  <script src="/home/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/home/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/home/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/home/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="/home/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="/home/assets/js/main.js"></script>
+
+</body>
+
+</html>

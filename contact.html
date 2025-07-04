@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>EcoVerse - Contact Us</title>
+    <meta name="description"
+        content="Contact EcoVerse administrator Albin Shaji for inquiries, support, or technical information regarding hosted applications and services.">
+    <meta name="keywords"
+        content="EcoVerse contact, Albin Shaji contact, server support, technical inquiry, application support, EcoVerse help">
+
+    <link href="/home/logos/ecoverse_logo_512x512.png" rel="icon">
+    
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;0,900&display=swap"
+        rel="stylesheet">
+
+    <link href="/home/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/home/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/home/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/home/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/home/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="/home/assets/css/main.css" rel="stylesheet">
+    <link href="/home/assets/css/style.css" rel="stylesheet">
+
+    <style>
+        /* Specific styles for the contact form to match your provided aesthetic */
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .info-item i {
+            font-size: 24px;
+            color: var(--accent-color);
+            /* Assuming you have a CSS variable for accent color */
+            margin-right: 15px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: rgba(0, 123, 255, 0.1);
+            /* Light background for icon */
+        }
+
+        .info-item h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .info-item p {
+            margin: 0;
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Adjustments for the form styling to look more like your general site style */
+        .php-email-form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .php-email-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .php-email-form label {
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .php-email-form input,
+        .php-email-form textarea {
+            border-radius: 4px;
+            box-shadow: none;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            width: 100%;
+        }
+
+        .php-email-form input:focus,
+        .php-email-form textarea:focus {
+            border-color: var(--accent-color);
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+        }
+
+        .php-email-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .php-email-form .error-message {
+            display: none;
+            color: #df1529;
+            background: #f8d7da;
+            text-align: left;
+            padding: 10px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .php-email-form .sent-message {
+            display: none;
+            color: #087e41;
+            background: #d4edda;
+            text-align: center;
+            padding: 10px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .php-email-form .loading {
+            display: none;
+            background: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .php-email-form .loading:before {
+            content: "";
+            display: inline-block;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            border: 3px solid #007bff;
+            border-top-color: #eee;
+            animation: animate-loading 1s infinite linear;
+        }
+
+        @keyframes animate-loading {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .php-email-form button[type="submit"] {
+            background: var(--accent-color);
+            border: 0;
+            padding: 12px 30px;
+            color: #fff;
+            transition: 0.3s;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            /* Make button full width */
+        }
+
+        .php-email-form button[type="submit"]:hover {
+            background: #0056b3;
+            /* Darker shade of accent color on hover */
+        }
+
+        /* Message display styling from previous PHP form */
+        .message {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+            margin-bottom: 20px;
+            /* Add margin bottom to separate from form */
+        }
+
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Styles for honeypot field to hide it */
+        .honeypot-field {
+            position: absolute;
+            left: -9999px; /* Move off-screen */
+            top: -9999px;
+            visibility: hidden; /* Hide from screen readers as well */
+        }
+    </style>
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="/index" class="logo d-flex align-items-center me-auto">
+                <img src="/home/logos/ecoverse_logo_512x512.png" alt="EcoVerse Logo"
+                class="w-8 h-8 mr-2 rounded-full object-cover">
+                <h1 class="sitename">EcoVerse</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/index#about">About</a></li>
+                <li><a href="/projects" class="active">Projects</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/contact">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="contact" class="contact section">
+            <div class="container section-title mt-5" data-aos="fade-up">
+                <h2>Get in Touch</h2>
+                <p>Have questions about EcoVerse, need technical assistance, or want to discuss a project?<br>
+                    Reach out to Albin Shaji directly through the form below or using the contact information provided.</p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <!-- Location Info Item -->
+                        <div class="info-item d-flex flex-row">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h3>Location:</h3>
+                                <p>Kollamparambil House, Karimba PO, 678597</p>
+                                <p>Palakkad, Kerala, India</p>
+                            </div>
+                        </div>
+                        <!-- Phone Info Item -->
+                        <div class="info-item d-flex flex-row">
+                            <i class="bi bi-telephone flex-shrink-0"></i>
+                            <div>
+                                <h3>Call:</h3>
+                                <p>+91 95264 49307</p>
+                            </div>
+                        </div>
+                        <!-- Email Info Item -->
+                        <div class="info-item d-flex flex-row">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>Email:</h3>
+                                <p><b>Personal: </b>albinshaji39k@gmail.com</p>
+                                <p><b>Official: </b>albinshajiofficial@gmail.com</p>
+                            </div>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d18634.396412782742!2d76.52748891051738!3d10.933180978216523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDU2JzAyLjQiTiA3NsKwMzEnMzMuMyJF!5e0!3m2!1sen!2sus!4v1750340921866!5m2!1sen!2sus"
+                            frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form action="/home/send_email.php" method="post" class="php-email-form">
+                            <div class="row gy-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" name="name" id="name" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control" name="email" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" class="form-control" name="subject" id="subject" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" name="message" rows="6" required></textarea>
+                                    </div>
+                                </div>
+                                <!-- CSRF Token Field -->
+                                <input type="hidden" name="csrf_token" id="csrf_token" value="">
+                                <!-- Honeypot Field (hidden from users) -->
+                                <div class="honeypot-field">
+                                    <label for="website">Leave this field empty:</label>
+                                    <input type="text" name="website" id="website">
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading">Sending...</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                    <button type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="/index" class="logo d-flex align-items-center">
+            <img src="/home/logos/ecoverse_logo_512x512.png" alt="EcoVerse Logo"
+              class="w-8 h-8 mr-2 rounded-full object-cover">
+            <span class="sitename">EcoVerse</span>
+          </a>
+          <p style="text-align: justify;"><b>EcoVerse</b> is a centralized and self-hosted digital platform that brings
+            together a variety of web applications, tools, and services in one unified ecosystem.
+            Designed to support web development, data processing, and software deployment workflows, EcoVerse serves as
+            a personal cloud environment with the flexibility
+            to scale and adapt to multiple use cases.<br>
+            This platform is created and maintained by <b>Albin Shaji</b>, a passionate Web Developer and Software
+            Engineer with a strong background in full-stack development, data analytics, and system integration.
+            EcoVerse reflects his commitment to building secure, efficient, and accessible digital solutions — all
+            hosted locally for optimal control and performance.
+          </p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://wa.me/919526449307?text=Hello%2C%20I%20have%20an%20inquiry%20regarding%20EcoVerse."
+              target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://instagram.com/albinshaji.03" target="_blank" class="bi bi-instagram"></a>
+            <a href="https://linkedin.com/in/albin-shaji-530192340" target="_blank" class="bi bi-linkedin"></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#" id="serverHomeLink">Server Home</a></li>
+            <li><a href="/index#about">About EcoVerse</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="javascript:void(0);" style="cursor: pointer;">Web App Development</a></li>
+            <li><a href="javascript:void(0);" style="cursor: pointer;">Software Deployment</a></li>
+            <li><a href="javascript:void(0);" style="cursor: pointer;">Data Analytics & Visualization</a></li>
+            <li><a href="javascript:void(0);" style="cursor: pointer;">Hosting & Cloud Solutions</a></li>
+            <li><a href="javascript:void(0);" style="cursor: pointer;">System Integration</a></li>
+            <li><a href="javascript:void(0);" style="cursor: pointer;">Troubleshooting</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12 footer-contact text-md-start">
+          <h4>Contact</h4>
+          <p>Albin Shaji</p>
+          <p>Kollamparambil House</p>
+          <p>Karimba Post, 678597</p>
+          <p>Palakkad, Kerala, India</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 95264 49307</span></p>
+          <p><strong>Email:</strong> <span>albinshajiofficial@gmail.com</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p><span id="copyright-year"></span> <strong class="px-1 sitename">EcoVerse</strong> <span> | All Rights
+          Reserved</span></p>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <div id="preloader"></div>
+
+    <script src="/home/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/home/assets/vendor/aos/aos.js"></script>
+    <script src="/home/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="/home/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/home/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/home/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="/home/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/home/assets/js/main.js"></script>
+
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.querySelector('.php-email-form');
+            const loadingDiv = contactForm.querySelector('.loading');
+            const errorMessageDiv = contactForm.querySelector('.error-message');
+            const sentMessageDiv = contactForm.querySelector('.sent-message');
+
+            // Function to reset form state (hides messages and clears form)
+            function resetFormState() {
+                loadingDiv.style.display = 'none';
+                errorMessageDiv.style.display = 'none';
+                sentMessageDiv.style.display = 'none';
+                errorMessageDiv.innerHTML = ''; // Clear any previous error messages
+                contactForm.reset(); // Clear form fields
+            }
+
+            // Initially reset form state on page load
+            resetFormState();
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission to handle via AJAX
+
+                // Show loading spinner and disable button
+                loadingDiv.style.display = 'block';
+                contactForm.querySelector('button[type="submit"]').disabled = true;
+                errorMessageDiv.style.display = 'none';
+                sentMessageDiv.style.display = 'none';
+
+                const formData = new FormData(this); // Get form data
+
+                fetch('/home/send_email.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    // Check if the network request was successful
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok. Status: ' + response.status);
+                    }
+                    // Try to parse JSON. If response is not JSON, this might throw an error.
+                    return response.json();
+                })
+                .then(data => {
+                    loadingDiv.style.display = 'none'; // Hide loading spinner
+                    contactForm.querySelector('button[type="submit"]').disabled = false; // Re-enable button
+
+                    if (data.success) {
+                        Swal.fire({
+                            title: 'Success!',
+                            text: data.message || 'Your message has been sent successfully.',
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        }).then(() => {
+                            // On success, redirect to index.html
+                            window.location.href = '/index';
+                        });
+                    } else {
+                        // Display error message from PHP or a generic one
+                        Swal.fire({
+                            title: 'Error!',
+                            text: data.message || 'There was an error sending your message. Please try again later.',
+                            icon: 'error',
+                            confirmButtonText: 'OK'
+                        }).then(() => {
+                            // On error, reload the current page (contact.html)
+                            window.location.reload();
+                        });
+                    }
+                })
+                .catch(error => {
+                    loadingDiv.style.display = 'none'; // Hide loading spinner
+                    contactForm.querySelector('button[type="submit"]').disabled = false; // Re-enable button
+                    console.error('Fetch error:', error); // Log detailed error for debugging
+                    Swal.fire({
+                        title: 'Connection Error!',
+                        text: 'Could not connect to the server or process the response. Please check your internet connection or try again later.',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    }).then(() => {
+                        // On catastrophic fetch error, reload the current page (contact.html)
+                        window.location.reload();
+                    });
+                });
+            });
+
+            // Fetch CSRF token from server and populate the hidden field
+            fetch('/home/send_email.php?action=get_csrf_token') // Call send_email.php to get the token
+                .then(response => response.json())
+                .then(data => {
+                    if (data.csrf_token) {
+                        document.getElementById('csrf_token').value = data.csrf_token;
+                    } else {
+                        console.error('Failed to get CSRF token:', data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching CSRF token:', error);
+                });
+        });
+    </script>
+
+</body>
+
+</html>

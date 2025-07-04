@@ -1,0 +1,29 @@
+/xampp/htdocs/home
+├── assets/
+│   ├── css/
+│   │   ├── main.css
+│   │   └── style.css
+│   ├── img/
+│   ├── js/
+│   │   ├── contact.js
+│   │   ├── main.js
+│   │   └── server_access.js
+│   └── vendor/
+│       ├── files/
+│       ├── images/
+│       ├── logos/
+│       └── uploads/
+├── contact.html
+├── error.html
+├── feedback.html
+├── generate_csrf.php
+├── index.html
+├── knowmore.html
+├── lg.jpg
+├── portfolio.html
+├── privacy.html
+├── projects.html
+├── README.md
+├── save_feedback.php
+├── send_email.php
+└── terms.html
